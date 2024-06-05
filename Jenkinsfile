@@ -10,7 +10,7 @@ if (env.BRANCH_IS_PRIMARY) {
 
 properties(jobProperties)
 
-node('linux-21') {
+node('maven-21') {
   timeout(time: 5, unit: 'MINUTES') {
     stage('Checkout') {
       checkout scm
