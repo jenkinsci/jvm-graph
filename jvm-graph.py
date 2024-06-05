@@ -35,8 +35,6 @@ def parse(data_json, jvms):
             entry = {"date": date, "installations": installations}
             parsed[jvm]["entries"].append(entry)
     for jvm in sorted(jvms):
-        if jvm not in LTS_RELEASES:
-            continue
         date_to_installations = {}
         for entry in sorted(parsed[jvm]["entries"], key=lambda x: x["date"]):
             if entry["date"] in date_to_installations:
