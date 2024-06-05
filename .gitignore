@@ -1,0 +1,8 @@
+*.png
+venv/
+
+# IntelliJ IDEA project files
+*.iml
+*.iws
+*.ipr
+.idea
